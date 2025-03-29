@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+  
+  /* Users Container */
+  .users-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .users-container h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  /* User Cards */
+  .user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .user-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .user-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .user-card p {
+    margin: 10px auto;
+  }
+  
+  .user-card button {
+    margin-top: 10px;
+    padding: 8px;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+  }
+  
+ /* General Button Styles */
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff; /* Primary blue color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  button:disabled {
+    background-color: #cccccc; /* Gray for disabled buttons */
+    cursor: not-allowed;
+  }
+  
+  /* Edit Button */
+  .user-card button:first-of-type {
+    background-color: #28a745; /* Green for Edit button */
+  }
+  
+  .user-card button:first-of-type:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Delete Button */
+  .user-card button:last-of-type {
+    background-color: #dc3545; /* Red for Delete button */
+  }
+  
+  .user-card button:last-of-type:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  /* Pagination Buttons */
+  .users-container > button {
+    width: auto;
+    padding: 10px 20px;
+  }
+  
+  .users-container > button:hover {
+    background-color: #0056b3; /* Hover effect consistent with other buttons */
+  }
+  
+  .users-container > button:disabled {
+    background-color: #cccccc; /* Gray for disabled pagination buttons */
+  }
+  .previous {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add spacing above the buttons */
+  }  
+  
